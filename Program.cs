@@ -16,7 +16,7 @@ namespace API_samange
             while (true)
             {
                 
-                FUNCTION.EXECUTE("CURL\\curl.exe", "--digest -u \"adaan@uplifteducation.org:xxxxx\" https://app.samanage.com/incidents.xml?per_page=1000 -k -o XML\\TOTAL.xml");
+                FUNCTION.EXECUTE("CURL\\curl.exe", "--digest -u \"test@uplifteducation.org:xxxxx\" https://app.samanage.com/incidents.xml?per_page=1000 -k -o XML\\TOTAL.xml");
 
                 //string STR_TOTAL = File.ReadAllText("XML\\TOTAL.xml");
                 //STR_TOTAL = STR_TOTAL.Substring(STR_TOTAL.IndexOf("<total_entries>") + 15);
@@ -25,7 +25,7 @@ namespace API_samange
 
                 ////for (int x = 2; x <= (INT_TOTAL + 1); x++)            
                 //for (int x = 2; x <= 5; x++)
-                //    FUNCTION.EXECUTE("CURL\\curl.exe", "--digest -u \"adaan@uplifteducation.org:Sam264123\" https://app.samanage.com/incidents.xml?page=" + x.ToString() + " -k -o XML\\output-" + x.ToString() + ".xml");
+                //    FUNCTION.EXECUTE("CURL\\curl.exe", "--digest -u \"test@uplifteducation.org:xxxxx\" https://app.samanage.com/incidents.xml?page=" + x.ToString() + " -k -o XML\\output-" + x.ToString() + ".xml");
 
                 XML SERIAL = new XML();
                 SERIAL.SRL("XML\\TOTAL.xml");
